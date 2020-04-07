@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00aaff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutdzien"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:background="@drawable/border"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:text="Wpisz numer dnia"
+            android:padding="4dp"
+            android:textColor="#444444"
+            android:layout_gravity="center"
+            android:fontFamily="@font/opis"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:layout_weight=".5"
+            android:layout_height="match_parent" />
+        <ListView
+            android:background="@drawable/lewonie"
+            android:id="@+id/listadzien"
+            android:layout_width="0dp"
+            android:choiceMode="singleChoice"
+            android:layout_weight=".5"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutmiesiac"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="0dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_weight=".3"
+        android:background="@drawable/bordertwo"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:text="Wpisz numer miesiąca"
+            android:layout_gravity="center"
+            android:textColor="#444444"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:fontFamily="@font/opis"
+            android:layout_weight=".5"
+            android:layout_height="match_parent" />
+        <ListView
+            android:id="@+id/listamiesiac"
+            android:background="@drawable/lewoziel"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:choiceMode="singleChoice"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutrok"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/border"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:text="Wpisz rok"
+            android:textColor="#444444"
+            android:fontFamily="@font/opis"
+            android:textSize="28dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight=".5"
+            android:layout_height="match_parent" />
+        <ListView
+            android:layout_width="0dp"
+            android:choiceMode="singleChoice"
+            android:background="@drawable/lewonie"
+            android:id="@+id/listarok"
+            android:layout_weight=".5"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/przycisk"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fontFamily="@font/gotu"
+        android:layout_margin="10dp"
+        android:textSize="50dp"
+        android:layout_weight=".4"
+        android:background="@drawable/button"
+        android:text="licz" />
+    <LinearLayout
+        android:id="@+id/layoutpokaz"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="0dp"
+        android:layout_weight=".4"
+        android:orientation="vertical">
+        <TextView
+
+            android:id="@+id/pokazdata"
+            android:layout_width="match_parent"
+            android:layout_weight=".3"
+            android:textColor="#444444"
+            android:textSize="28dp"
+            android:fontFamily="@font/gotu"
+            android:gravity="center"
+            android:layout_height="0dp" />
+        <TextView
+
+            android:id="@+id/pokazdzien"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:textSize="50dp"
+            android:fontFamily="@font/gotu"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight=".7"
+            android:layout_height="0dp" />
+
+
+
+    </LinearLayout>
+</LinearLayout>
